@@ -5,8 +5,7 @@ export default function About() {
         {/* Left - Profile Image */}
         <div className="flex-1 flex justify-center relative">
           <div className="relative">
-            {/* Green Circle Background */}
-            <div className="absolute inset-0 rounded-full bg-yellow-400 w-[320px] h-[320px] -z-10"></div>
+          
             {/* Person Image */}
             <img
               src="https://res.cloudinary.com/dck3betif/image/upload/v1758346518/happy-young-woman-sitting-floor-using-laptop-gray-wall_llodbl.png"
@@ -18,12 +17,12 @@ export default function About() {
 
         {/* Right - Content */}
         <div className="flex-1 space-y-6 text-center md:text-left">
-          <p className="text-sm uppercase tracking-wide ">About Me</p>
+          <p className="text-sm uppercase tracking-wide ">About us</p>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-200">
-            Who is <span className="text-yellow-400">Palm Pixel?</span>
+            <span className="text-yellow-400">Palm & Pixel AI</span>
           </h1>
           <p className=" max-w-lg">
-            Palm Pixel is a results-driven digital marketing agency that
+            Palm & Pixel AI is a results-driven digital marketing agency that
             transforms brands into memorable experiences online. We help
             businesses engage audiences, grow visibility, and achieve measurable
             success through creative and data-driven strategies.

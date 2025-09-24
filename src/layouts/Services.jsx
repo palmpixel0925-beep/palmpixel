@@ -31,7 +31,7 @@ export default function Services() {
   return (
     <section className="w-full flex justify-center items-center text-white py-16 px-4 sm:px-6 md:px-16 bg-black" id="services">
       <div className="w-full max-w-[1200px] flex flex-col justify-center items-center">
-        <h1 className="text-center mb-4 text-3xl sm:text-4xl md:text-5xl font-bold">
+        <h1 className="text-center mb-4 text-yellow-400 text-3xl sm:text-4xl md:text-5xl font-bold">
           What We Offer
         </h1>
         <p className="text-center text-gray-300 max-w-xl mx-auto mb-10 text-sm sm:text-base md:text-lg">
@@ -44,13 +44,13 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="border w-full sm:w-[300px] md:w-[350px] flex flex-col justify-start items-center text-center border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-lg transition relative bg-gray-900"
+                className="border w-full sm:w-[300px] md:w-[350px] flex flex-col justify-start items-center text-center border-yellow-500 rounded-xl p-6 shadow-sm hover:shadow-lg transition relative bg-gray-950"
               >
                 {/* Icon */}
                 <div
-                  className={`w-12 h-12 flex items-center justify-center rounded-lg bg-gray-100 mb-4 ${service.color}`}
+                  className={`w-14 h-14 flex items-center justify-center rounded-lg bg-gray-900 mb-4 ${service.color}`}
                 >
-                  <Icon className="w-6 h-6" />
+                  <Icon className="w-8 h-8" />
                 </div>
 
                 {/* Title */}

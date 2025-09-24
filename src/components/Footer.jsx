@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-16 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Company Info */}
         <div>
-          <h2 className="text-white text-xl font-bold mb-4">Palm Pixel</h2>
+          <h2 className="text-white text-xl font-bold mb-4">Palm & Pixel AI</h2>
           <p className="text-gray-400 text-sm">
             A digital marketing company specializes in online strategies like
             SEO, social media, and ads to grow brand visibility and sales.
@@ -64,7 +64,7 @@ export default function Footer() {
             </li>
             <li>
               <a href="#" className="hover:text-white">
-              Paid Ads
+                Paid Ads
               </a>
             </li>
             <li>
@@ -80,7 +80,8 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-3 text-sm">
             <li className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-blue-500" /> Palm Pixel***@gmail.com
+              <Mail className="w-5 h-5 text-blue-500" /> Palm & Pixel
+              AI***@gmail.com
             </li>
             <li className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-blue-500" /> +123 - 456 - 7890
@@ -122,7 +123,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800 text-center py-6 text-sm text-gray-500">
-        © {new Date().getFullYear()} Palm Pixel. All rights reserved.
+        © Copyright {new Date().getFullYear()}   Palm & Pixel AI - All Rights Reserved.
       </div>
     </footer>
   );

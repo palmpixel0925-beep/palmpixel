@@ -10,10 +10,12 @@ import Testimonials from "./layouts/Testimonials";
 import Whatsapp from "./components/Whatsapp";
 import Gallery from "./layouts/Gallery";
 import ScrollTop from "./components/ScrollTop";
+import Popup from "./components/Popup";
 
 export default function App() {
   return (
     <div className="bg-black">
+      <Popup/>
       <Navbar />
       <Hero />
       <About />

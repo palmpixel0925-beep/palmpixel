@@ -11,8 +11,8 @@ export default function WhyChooseUs() {
       <div className="w-full max-w-[1200px] text-white py-16 flex flex-col md:flex-row items-center gap-10">
         {/* Left Side - Content */}
         <div className="flex-1 space-y-6">
-          <p className="font-semibold uppercase text-yellow-400">Why Choose Us</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+          <p className="font-semibold uppercase ">Why Choose Us</p>
+          <h1 className="text-3xl text-yellow-400 sm:text-4xl md:text-5xl font-bold leading-tight">
             Why Choose Us
           </h1>
           <p className="text-white max-w-lg text-sm sm:text-base md:text-lg">

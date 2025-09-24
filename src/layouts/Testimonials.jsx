@@ -50,7 +50,7 @@ export default function Reviews() {
     <section className="max-w-6xl mx-auto px-6 py-16" id="testimonials">
       {/* Section Header */}
       <div className="text-center mb-14">
-        <h1 className="text-4xl font-bold text-white">
+        <h1 className="text-4xl font-bold  text-yellow-400">
           Read reviews, <br /> ride with confidence.
         </h1>
         {/* <div className="flex items-center justify-center mt-4 space-x-2 text-gray-300">
