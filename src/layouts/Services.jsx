@@ -4,6 +4,8 @@ import { FaRobot } from "react-icons/fa";
 const services = [
   {
     title: "AI Powered Marketing Services",
+    description:
+      "Harness the power of artificial intelligence to create data-driven marketing campaigns that optimize performance and deliver measurable business growth.",
     points: [
       "Leverage AI for smarter campaign optimization",
       "Boost engagement with predictive targeting",
@@ -14,6 +16,8 @@ const services = [
   },
   {
     title: "Website Design (Arabic + English)",
+    description:
+      "Build stunning bilingual websites in Arabic and English that are responsive, SEO-optimized, and crafted for exceptional user experiences.",
     points: [
       "Responsive bilingual website design",
       "Optimized for performance and SEO",
@@ -24,6 +28,8 @@ const services = [
   },
   {
     title: "Social Media Management",
+    description:
+      "Enhance your online presence with expert content creation, audience engagement, and consistent brand storytelling across all social platforms.",
     points: [
       "Tailored content strategies for each platform",
       "Consistent posting & audience engagement",
@@ -34,6 +40,8 @@ const services = [
   },
   {
     title: "Paid Ads (Meta, Google, LinkedIn)",
+    description:
+      "Run high-performance paid ad campaigns across major networks with precise targeting, continuous optimization, and a focus on maximizing ROI.",
     points: [
       "Data-driven ad optimization",
       "Increase conversions with precise targeting",
@@ -44,6 +52,8 @@ const services = [
   },
   {
     title: "Brand Identity & Logo Design",
+    description:
+      "Create a memorable and cohesive brand identity with professional logo design and visuals that communicate your company’s core values.",
     points: [
       "Professional logo and visual identity creation",
       "Designs that reflect business values",
@@ -54,13 +64,13 @@ const services = [
   },
 ];
 
- const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMobileMenuOpen(false); 
-  };
+const scrollToSection = (id) => {
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+  setIsMobileMenuOpen(false);
+};
 
 export default function Services() {
   return (
@@ -96,15 +106,25 @@ export default function Services() {
                   {service.title}
                 </h3>
 
+                <p className="text-sm sm:text-base text-gray-400 text-center list-disc space-y-1 mb-4">
+                  {" "}
+                  {service.description}
+                </p>
+
                 {/* Points */}
                 <ul className="text-sm sm:text-base text-gray-400 text-left list-disc space-y-1 mb-4 px-4">
                   {service.points.map((point, i) => (
-                    <li key={i}>{point}</li>
+                    <div className="">
+                      <li key={i}>{point}</li>
+                    </div>
                   ))}
                 </ul>
 
                 {/* Get Quote Button */}
-                <button className="mt-auto px-5 py-2 bg-gradient-to-r from-amber-600 to-yellow-400 text-black font-semibold rounded-full shadow-md hover:scale-105 transition">
+                <button
+                  onClick={() => scrollToSection("contact")}
+                  className="mt-auto px-5 py-2 bg-gradient-to-r from-amber-600 to-yellow-400 text-black font-semibold rounded-full shadow-md hover:scale-105 transition"
+                >
                   Get Quote
                 </button>
               </div>
