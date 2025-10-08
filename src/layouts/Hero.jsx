@@ -27,6 +27,14 @@ export default function Hero() {
     { label: "WhatsApp Automation" },
   ];
 
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+    setIsMobileMenuOpen(false); 
+  };
+
   return (
     <div className="" id="home">
       <div className="relative flex flex-col h-screen max-lg:justify-center items-center max-lg:pt-10 gap-0 overflow-hidden">
@@ -50,17 +58,17 @@ export default function Hero() {
           <div className="relative z-10 flex-1 flex flex-col text-white items-center max-lg:items-center py-20 space-y-6 text-center">
             <h1
               className="text-4xl font-amiri sm:text-4xl xl:max-w-[1000px] md:text-[4rem] lg:text-[4.6rem] font-extrabold leading-tight 
-               bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent"
+               bg-gradient-to-r from-yellow-700 via-yellow-500 to-yellow-700 bg-clip-text text-transparent"
             >
               Luxury Digital Solutions for Dubai Visionaries
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg max-w-lg max-lg:text-center">
               From iconic websites to high-converting campaigns <br /> we build
-              brands that shine.
+              brands that shine
             </p>
             <div className="flex space-x-4 mt-6">
-              <button className="bg-gradient-to-r from-amber-600 to-yellow-400 text-black px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold shadow-lg transition-transform hover:scale-105">
+              <button onClick={() => scrollToSection("contact")} className="bg-gradient-to-r from-amber-600 to-yellow-400 text-black px-6 sm:px-8 py-2 sm:py-3 rounded-full font-bold shadow-lg transition-transform hover:scale-105">
                 Book Free Consultation
               </button>
             </div>

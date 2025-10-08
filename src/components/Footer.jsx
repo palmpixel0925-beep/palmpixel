@@ -9,6 +9,9 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
+    const message = encodeURIComponent(
+    "Hi! Ready to elevate your Dubai brand? Let’s chat."
+  );
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-6 md:px-16 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -83,12 +86,12 @@ export default function Footer() {
               <Mail className="w-5 h-5 text-blue-500" /> Palm & Pixel
               AI***@gmail.com
             </li>
-            <li className="flex items-center gap-3">
+            <a href={`https://wa.me/911234567890?text=${message}`} className="flex items-center gap-3">
               <Phone className="w-5 h-5 text-blue-500" /> +123 - 456 - 7890
-            </li>
-            <li className="flex items-center gap-3">
+            </a>
+            {/* <li className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-blue-500" /> Raipur, India
-            </li>
+            </li> */}
           </ul>
 
           {/* Social Media */}
@@ -106,7 +109,7 @@ export default function Footer() {
               <Twitter className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/palmpixalai?igsh=ZzZjanRuNG9ydnE0"
               className="p-2 rounded-full bg-gray-800 hover:bg-pink-500 transition"
             >
               <Instagram className="w-5 h-5" />

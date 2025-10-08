@@ -46,11 +46,11 @@ const Popup = ({ onClose }) => {
         {/* LEFT SIDE */}
         <div className="flex-1 max-lg:hidden bg-gradient-to-br from-black via-gray-900 to-black flex flex-col justify-center items-center text-center p-8 md:p-12">
           <div className="max-w-sm flex flex-col items-center gap-6">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/dxzxvhrhy/image/upload/v1758024528/aitemp_gowxrf.png"
               alt="AI Icon"
-              className="w-40 md:w-52 rounded-2xl shadow-lg"
-            />
+              className="w-48 md:w-52 rounded-2xl shadow-lg"
+            /> */}
 
             <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
               FREE AI BRAND AUDIT

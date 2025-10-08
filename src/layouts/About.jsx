@@ -19,7 +19,7 @@ export default function About() {
         <div className="flex-1 space-y-6 text-center md:text-left">
           <p className="text-sm uppercase tracking-wide ">About us</p>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-200">
-            <span className="text-yellow-400">Palm & Pixel AI</span>
+            <span className="bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent">Palm & Pixel AI</span>
           </h1>
           <p className=" max-w-lg">
             Palm & Pixel AI is a results-driven digital marketing agency that

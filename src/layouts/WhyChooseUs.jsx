@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
         {/* Left Side - Content */}
         <div className="flex-1 space-y-6">
           <p className="font-semibold uppercase ">Why Choose Us</p>
-          <h1 className="text-3xl text-yellow-400 sm:text-4xl md:text-5xl font-bold leading-tight">
+          <h1 className="text-3xl bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent sm:text-4xl md:text-5xl font-bold leading-tight">
             Why Choose Us
           </h1>
           <p className="text-white max-w-lg text-sm sm:text-base md:text-lg">

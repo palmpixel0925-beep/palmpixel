@@ -1,0 +1,70 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "why_us": "Why Choose Us",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us"
+  },
+  "hero_section": {
+    "headline": "Luxury Digital Solutions for Dubai Visionaries",
+    "tagline": "From iconic websites to high-converting campaigns we build brands that shine",
+    "cta": "Book Free Consultation"
+  },
+  "about_us": {
+    "title": "About us",
+    "company_name": "Palm & Pixel AI",
+    "description": "Palm & Pixel AI is a results-driven digital marketing agency that transforms brands into memorable experiences online. We help businesses engage audiences, grow visibility, and achieve measurable success through creative and data-driven strategies."
+  },
+  "stats": {
+    "projects_completed": "Projects Completed",
+    "industry_covered": "Industry Covered",
+    "years_of_experience": "Years of Experience"
+  },
+  "what_we_offer": {
+    "title": "What We Offer",
+    "description": "Transforming ideas into impactful digital experiences for your brand.",
+    "ai_marketing_title": "AI Powered Marketing Services",
+    "ai_marketing_desc": "AI-powered marketing services that leverage advanced data analysis to optimize campaigns, increase engagement, and deliver measurable results for business growth.",
+    "web_design_title": "Website Design (Arabic + English)",
+    "web_design_desc": "We build responsive Arabic and English websites optimized for performance and user experience, helping your brand engage a wider audience effectively.",
+    "social_media_title": "Social Media Management",
+    "social_media_desc": "Grow your online presence with tailored social media strategies, consistent content, and audience engagement to boost brand awareness across platforms.",
+    "paid_ads_title": "Paid Ads (Meta, Google, LinkedIn)",
+    "paid_ads_desc": "Run targeted ad campaigns on Meta, Google, and LinkedIn to maximize reach, engagement, and ROI through data-driven optimization.",
+    "brand_identity_title": "Brand Identity & Logo Design",
+    "brand_identity_desc": "Create strong brand identities with professional logos and visual designs that reflect your business values and stand out in the market."
+  },
+  "why_choose_us": {
+    "title": "Why Choose Us",
+    "description": "We combine cultural fluency, premium design standards, transparent pricing in AED, and fast, dedicated support to deliver innovative solutions that drive business growth and create meaningful impact for your brand.",
+    "cultural_fluency": "Cultural Fluency",
+    "premium_design": "Premium Design Standards",
+    "transparent_pricing": "Transparent Pricing in AED",
+    "fast_support": "Fast Turnaround & Dedicated Support"
+  },
+  "testimonials": {
+    "title": "What our customers say",
+    "subtitle": "Read Reviews, Ride with Confidence."
+  },
+  "contact_us": {
+    "title": "We’re here to help you",
+    "subtitle": "Discuss Your Digital Marketing Goals",
+    "description": "Looking to grow your online presence, attract more leads, and increase sales? Reach out to us for expert digital marketing solutions tailored to your brand.",
+    "email": "E-mail: ",
+    "phone": "Phone number: ",
+    "select_service": "Select Service",
+    "get_a_quote": "Get A Quote",
+    "contact_title": "Contact Us"
+  },
+  "footer": {
+    "description": "A digital marketing company specializes in online strategies like SEO, social media, and ads to grow brand visibility and sales.",
+    "quick_links": "Quick Links",
+    "home": "Home",
+    "about_us": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "copyright": "© Copyright 2025 Palm & Pixel AI - All Rights Reserved."
+  }
+}

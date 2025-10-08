@@ -21,12 +21,13 @@ export default function App() {
       <About />
       <Services />
       <WhyChooseUs />
-      <Testimonials />
       <Gallery/>
+      <Testimonials />
       <Contact />
       <Footer />
       <Whatsapp/>
       <ScrollTop/>
+
     </div>
   );
 }

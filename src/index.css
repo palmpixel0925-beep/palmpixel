@@ -7,3 +7,11 @@ h1{
   font-weight: 400;
   font-style: normal;
 }
+
+.gtranslate_wrapper select {
+  background: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 4px;
+}
