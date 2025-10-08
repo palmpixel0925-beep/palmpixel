@@ -11,6 +11,7 @@ import Whatsapp from "./components/Whatsapp";
 import Gallery from "./layouts/Gallery";
 import ScrollTop from "./components/ScrollTop";
 import Popup from "./components/Popup";
+import Portfolio from "./layouts/Portfolio";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
       <About />
       <Services />
       <WhyChooseUs />
+      <Portfolio/>
       <Gallery/>
       <Testimonials />
       <Contact />
