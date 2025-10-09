@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function App() {
+function Gallery() {
   const images = [
     "https://res.cloudinary.com/dck3betif/image/upload/v1758702881/change_the_text_back_12_m90pvp.png",
     "https://res.cloudinary.com/dck3betif/image/upload/v1758707645/90_ia4lwn.png",
@@ -19,30 +19,21 @@ function App() {
     autoplay: true,
     autoplaySpeed: 3000,
     cssEase: "linear",
+    arrows: false,
   };
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      <div className="w-full max-w-[1200px] px-4 flex justify-center items-center">
-        {/* Heading */}
-        {/* <h1 className="text-4xl font-extrabold text-gray-800 text-center mb-4">
-          Captivating Image Carousel
-        </h1> */}
-        {/* Description */}
-        {/* <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
-          Explore a collection of stunning photos in this automatic slider, featuring a landscape aspect ratio and elegant curved borders.
-        </p> */}
-        
-        <div className="w-[768px]">
+      <div className="w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 flex justify-center items-center">
+        <div className="w-full sm:w-[90%] md:w-[768px] lg:w-[900px]">
           <Slider {...settings}>
             {images.map((image, index) => (
               <div key={index} className="p-2">
-                {/* Adjusting aspect ratio for landscape and adding curved borders */}
-                <div className="w-full aspect-video rounded-[30px] overflow-hidden shadow-lg">
+                <div className="w-full aspect-video rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>
               </div>
@@ -54,4 +45,4 @@ function App() {
   );
 }
 
-export default App;
+export default Gallery;
