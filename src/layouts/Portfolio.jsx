@@ -1,102 +1,89 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 
 const ShowcaseSection = () => {
   const showcaseImages = [
-    // Creative Designs (normal size)
     {
-      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759927688/37748939_05feb5_cvnmvv.jpg",
-      type: "creative",
-    },
-
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757486656/creative-design5_fpvzco.jpg",
-      type: "creative",
-    },
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489624/homepage3_vrgmhb.png",
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759988743/logo_kwbhhy.png",
       type: "website",
+      links: "https://drchitraendocare.com/"
     },
     {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489632/homepage4_k86dtk.png",
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759988744/sprn-logo_b8ylab.png",
       type: "website",
+      links: "https://sprn.in/"
     },
     {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489607/homepage1_stn9hh.png",
+      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757482870/client2_dgj1fr.png",
       type: "website",
+      links: ""
     },
     {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489615/homepage2_k5twkz.png",
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759988743/logo_nvu9dn.jpg",
       type: "website",
+      links: "https://irefraipur.in/"
     },
     {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757486661/creative-design6_a2izof.jpg",
-      type: "creative",
-    },
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757486666/creative-design7_nallsd.jpg",
-      type: "creative",
-    },
-
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757486671/creative-design8_rcyoqf.jpg",
-      type: "creative",
-    },
-
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757486690/creative-design10_uamygi.jpg",
-      type: "creative",
-    },
-
-    // Website Development (larger)
-
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489642/homepage5_o0ofjn.png",
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759988744/favicon_mwio6y.jpg",
       type: "website",
+      links: "https://muraadconstruction.com/"
     },
     {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489656/homepage6_xgdexz.png",
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759990431/WhatsApp_Image_2024-04-03_at_5.01.20_PM-removebg-preview-1-1_ocvazl.png",
       type: "website",
-    },
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757489684/homepage7_egs0ov.png",
-      type: "website",
-    },
-    {
-      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759927607/36783710_14jan7_nzmlyz.jpg",
-      type: "creative",
-    },
-
-    
-    {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757486651/creative-design4_gpleok.jpg",
-      type: "creative",
+      links: "https://coldfistfitnessclub.in/"
     },
   ];
 
+  // React Slick settings
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 3 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 480,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
+
   return (
     <section className="py-16 bg-black">
-      <h1 className="text-center mb-8 bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl font-bold">Portfolio</h1>
+      <h1 className="text-center mb-20 bg-gradient-to-r from-yellow-600 via-yellow-400 to-yellow-600 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl font-bold">
+        Portfolio
+      </h1>
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <Slider {...settings}>
           {showcaseImages.map((item, i) => (
-            <div
-              key={i}
-              className={`relative overflow-hidden rounded-xl shadow-md group bg-white ${
-                item.type === "website"
-                  ? "col-span-2 md:col-span-3 lg:col-span-2"
-                  : ""
-              }`}
-            >
-              <img
-                src={item.src}
-                alt={`showcase-${i}`}
-                className={`w-full object-cover transition-transform duration-500 group-hover:scale-110 ${
-                  item.type === "website" ? "h-56 sm:h-64" : "h-44 sm:h-48"
-                }`}
-              />
+            <div key={i} className="px-4">
+              <a href={item.links} className="relative rounded-xl shadow-md group flex justify-center items-center">
+                <img
+                  src={item.src}
+                  alt={`showcase-${i}`}
+                  className="transition-transform grayscale hover:grayscale-0 duration-500 group-hover:scale-110 w-40 mx-auto"
+                />
+              </a>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
     </section>
   );
