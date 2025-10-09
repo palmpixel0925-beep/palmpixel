@@ -31,6 +31,21 @@ const ShowcaseSection = () => {
       type: "website",
       links: "https://coldfistfitnessclub.in/"
     },
+     {
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1759988742/client7_yaipke_gejky5.png",
+      type: "website",
+      links: "https://coldfistfitnessclub.in/"
+    },
+    {
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1760013321/logo-footer_amtx1w.png",
+      type: "website",
+      links: "https://spadvertising.in/"
+    },
+     {
+      src: "https://res.cloudinary.com/dck3betif/image/upload/v1760013366/whitelogo_t9yvkc.png",
+      type: "website",
+      links: "https://www.instagram.com/parakhjewellersrpr/?hl=en"
+    },
   ];
 
   // React Slick settings
