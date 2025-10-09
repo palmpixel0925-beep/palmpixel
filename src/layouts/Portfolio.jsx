@@ -17,11 +17,6 @@ const ShowcaseSection = () => {
       links: "https://sprn.in/"
     },
     {
-      src: "https://res.cloudinary.com/dxzxvhrhy/image/upload/v1757482870/client2_dgj1fr.png",
-      type: "website",
-      links: ""
-    },
-    {
       src: "https://res.cloudinary.com/dck3betif/image/upload/v1759988743/logo_nvu9dn.jpg",
       type: "website",
       links: "https://irefraipur.in/"
